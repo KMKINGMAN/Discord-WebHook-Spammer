@@ -1,6 +1,6 @@
 ## 😎 Discord WebHook Spammer
 It is a dedicated discord tool that continuously sends information to the channel discord<br>
-<strong>This Simple Tools Maked By KINGMAN</strong><a href="">MeCodes Server</a>
+<strong>This Simple Tools Maked By KINGMAN</strong><a href="https://discord.gg/2wJqGg3KY8">MeCodes Server</a>
 <h3>How To Use?</h3>
 <ui>
     <li>Run The Project Useing This Commands `python3 main.py`</li>
