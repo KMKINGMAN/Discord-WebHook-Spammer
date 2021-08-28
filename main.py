@@ -15,6 +15,5 @@ def spam(msg, webhook):
             print("Bad Webhook :" + webhook)
             time.sleep(5)
             exit()
-kingman_top = 1
-while kingman_top == 1:
+while True:
     spam(msg, webhook)
