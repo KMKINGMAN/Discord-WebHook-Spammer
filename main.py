@@ -1,7 +1,7 @@
 import time
 import requests
 import pyfiglet
-banner = pyfiglet.figlet_format("KINGMAN")
+banner = pyfiglet.figlet_format("PALALIGHT")
 print(banner)
 msg = input("Please Insert WebHook Spam Message: ")
 webhook = input("Please Insert WebHook URL: ")
