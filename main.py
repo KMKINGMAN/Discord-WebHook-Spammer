@@ -1,11 +1,11 @@
-import time
-import requests
-import pyfiglet
-banner = pyfiglet.figlet_format("KINGMAN")
-print(banner)
+import time, requests, pyfiglet, threading
+print(pyfiglet.figlet_format("KINGMAN"))
+
 msg = input("Please Insert WebHook Spam Message: ")
 webhook = input("Please Insert WebHook URL: ")
-def spam(msg, webhook):
+th = int(input('Number of thread ? (200 recommended): '))
+sleep = int(input("Sleeping time ? (recommended 2): "))
+def spam():
     while True:
         try:
             data = requests.post(webhook, json={'content': msg})
@@ -13,8 +13,8 @@ def spam(msg, webhook):
                 print(f"Sent MSG {msg}")
         except:
             print("Bad Webhook :" + webhook)
-            time.sleep(5)
-            exit()
-kingman_top = 1
-while kingman_top == 1:
-    spam(msg, webhook)
+        time.sleep(sleep)
+    
+for x in range(th):
+    t = threading.Thread(target = spam)
+    t.start()
